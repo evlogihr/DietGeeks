@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietGeeks.Console", "DietGeeks.Console\DietGeeks.Console.csproj", "{CA20A883-80AD-4CA9-99DE-DD3548A07B66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietGeeks.Data", "DietGeeks.Data\DietGeeks.Data.csproj", "{64FD56AB-112F-409A-AF93-9893F4564B2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietGeeks.Models", "DietGeeks.Models\DietGeeks.Models.csproj", "{E00702FA-815C-432A-9A93-AFB290AA3621}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietGeeks.Web", "DietGeeks.Web\DietGeeks.Web.csproj", "{7B264558-5119-4493-9049-24E87125E24B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietGeeks.Contracts", "DietGeeks.Contracts\DietGeeks.Contracts.csproj", "{0E112055-B2F1-4366-B9A3-416B6815EACF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{CA736F74-1BA9-4FA6-AEC5-EC4DD409604B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA20A883-80AD-4CA9-99DE-DD3548A07B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA20A883-80AD-4CA9-99DE-DD3548A07B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA20A883-80AD-4CA9-99DE-DD3548A07B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA20A883-80AD-4CA9-99DE-DD3548A07B66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64FD56AB-112F-409A-AF93-9893F4564B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64FD56AB-112F-409A-AF93-9893F4564B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64FD56AB-112F-409A-AF93-9893F4564B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64FD56AB-112F-409A-AF93-9893F4564B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E00702FA-815C-432A-9A93-AFB290AA3621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E00702FA-815C-432A-9A93-AFB290AA3621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E00702FA-815C-432A-9A93-AFB290AA3621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E00702FA-815C-432A-9A93-AFB290AA3621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B264558-5119-4493-9049-24E87125E24B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B264558-5119-4493-9049-24E87125E24B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B264558-5119-4493-9049-24E87125E24B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B264558-5119-4493-9049-24E87125E24B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E112055-B2F1-4366-B9A3-416B6815EACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E112055-B2F1-4366-B9A3-416B6815EACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E112055-B2F1-4366-B9A3-416B6815EACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E112055-B2F1-4366-B9A3-416B6815EACF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64FD56AB-112F-409A-AF93-9893F4564B2D} = {CA736F74-1BA9-4FA6-AEC5-EC4DD409604B}
+		{E00702FA-815C-432A-9A93-AFB290AA3621} = {CA736F74-1BA9-4FA6-AEC5-EC4DD409604B}
+		{0E112055-B2F1-4366-B9A3-416B6815EACF} = {CA736F74-1BA9-4FA6-AEC5-EC4DD409604B}
+	EndGlobalSection
+EndGlobal
