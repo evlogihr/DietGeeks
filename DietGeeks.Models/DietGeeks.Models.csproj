@@ -52,8 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationUser.cs" />
+    <Compile Include="AppUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserHistory.cs" />
+    <Compile Include="UserInformation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

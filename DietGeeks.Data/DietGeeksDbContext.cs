@@ -4,29 +4,36 @@
     using System.Data.Entity;
     using System.Linq;
 
+    using DietGeeks.Data.Contracts;
+    using DietGeeks.Data.Models;
     using Microsoft.AspNet.Identity.EntityFramework;
 
-    using DietGeeks.Data.Models;
-    using DietGeeks.Data.Contracts;
-
-    public class DietGeeksDbContext : IdentityDbContext<AppUser>, IDietGeeksDbContext
+    public class DietGeeksDbContext : IdentityDbContext<ApplicationUser>, IDietGeeksDbContext
     {
         public DietGeeksDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
-        { }
+        {
+        }
 
         public DietGeeksDbContext(string nameOrConnectionString)
             : base(nameOrConnectionString)
-        { }
+        {
+        }
+
+        public DbContext DbContext
+        {
+            get { throw new NotImplementedException(); }
+        }
 
         public static DietGeeksDbContext Create()
         {
             return new DietGeeksDbContext();
         }
 
-        public new DbContext DbContext
+        public override int SaveChanges()
         {
-            get { throw new NotImplementedException(); }
+            this.ApplyAuditInfoRules();
+            return base.SaveChanges();
         }
 
         public void ClearDatabase()
@@ -36,7 +43,7 @@
 
         public new IDbSet<T> Set<T>() where T : class
         {
-            throw new NotImplementedException();
+            return base.Set<T>();
         }
 
         protected override void Dispose(bool disposing)

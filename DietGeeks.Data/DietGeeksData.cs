@@ -6,7 +6,8 @@
 
         public DietGeeksData()
             : this(new DietGeeksDbContext())
-        { }
+        { 
+        }
 
         public DietGeeksData(DietGeeksDbContext context)
         {
